@@ -5,8 +5,8 @@ $(document).ready(function(){
 		anchors:['firstPage', 'secondPage', 'thirdPage', '4thPage', '5thPage'],
 		menu: '#js-menu',
 		autoScrolling: false,
-		// fitToSection: false,
-		// scrollingSpeed: 1200
+		fitToSection: false,
+		scrollingSpeed: 1200
 	});
 
 	// logo change when scroll

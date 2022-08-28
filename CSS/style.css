@@ -127,6 +127,7 @@ h1,h2,h3,h4,h5,h6,p{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.3s;
 }
 
 .side-nav .active .side-nav__item span{
@@ -195,9 +196,6 @@ h1,h2,h3,h4,h5,h6,p{
         margin-left: auto;
     }
 
-    .navbar__nav{
-        display: none;
-    }
 }
 
 .navbar__nav{
@@ -250,6 +248,12 @@ h1,h2,h3,h4,h5,h6,p{
     padding-top: 16px;
 }
 
+@media (min-width: 961px){
+    .menu__toggle{
+        display: none;
+    }
+}
+
 
 .menu__toggle span{
     display: block;
@@ -276,8 +280,64 @@ h1,h2,h3,h4,h5,h6,p{
         opacity: 1;
         visibility: visible;
     }
+    .popup-nav .nav__menu{
+        float: none;
+        padding-top: 56px;
+    }
+    .popup-nav .nav__menu li{
+        float: none;
+    }
+    .popup-nav .menu__item{
+        text-align: center;
+        padding: 16px;
+    }
+    .popup-nav .nav__icon-group{
+        float: none;
+        text-align: center;
+        padding: 16px;
+    }
+    /*popup-close*/
+    .popup-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 56px;
+        height: 56px;
+        display: inline-block;
+        padding: 12px;
+        padding-top: 16px; 
+    }
+    .popup-close span{
+        height: 3px;
+        width: 32px;
+        background-color: #dcb677;
+        position: absolute;
+        top: 50%;
+    }
+
+    .popup-close span:nth-child(1){
+        transform: translateY(-50%) rotate(45deg);
+    }
+    
+    .popup-close span:nth-child(2){
+        transform: translateY(-50%) rotate(-45deg);
+    }
 }
 
+/*-------------------------*/
+/* $Layout
+---------------------------*/
+.section__inner{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px){
+    .section__inner{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
 
 /*-------------------------*/
 /* $Hero
@@ -356,6 +416,26 @@ h1,h2,h3,h4,h5,h6,p{
 
 .info__btn{
     margin-top: 24px;
+}
+
+@media (max-width: 768px){
+    .info{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .info__title{
+        font-size: 40px;
+    }
+
+    .info__subtitle{
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .info__text{
+        margin-bottom: 24px;
+    }
 }
 
 /*-------------------------*/
@@ -510,6 +590,12 @@ h1,h2,h3,h4,h5,h6,p{
 .parallax-container-about{
     margin-top: 120px;
 }
+
+@media (max-width: 768px){
+    .parallax-container-about{
+       margin-top: 0px;
+    }
+}
 .parallax-container-about .frame{
     width: 200%;
     bottom: 0;
@@ -530,6 +616,12 @@ h1,h2,h3,h4,h5,h6,p{
 /*service*/
 .parallax-container-contact{
     margin-top: 240px;
+}
+
+@media (max-width: 768px){
+    .parallax-container-contact{
+        margin-top: 48px;
+    }
 }
 
 .parallax-container-contact .frame{
